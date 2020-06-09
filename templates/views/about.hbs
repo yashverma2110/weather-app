@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+        img {
+            max-width: 500px;
+            max-height: 350px;
+            border: 10px solid grey;
+            animation: skew 5s infinite;
+        }
+
+        @keyframes skew {
+            0% {
+                transform: skewX(-10deg);
+            }
+
+            50% {
+                transform: skewX(10deg);
+            }
+
+            100% {
+                transform: skewX(-10deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    {{>header}}
+    <img src="./assets/Screenshot (9).png" />
+    {{>footer}}
+</body>
+
+</html>
